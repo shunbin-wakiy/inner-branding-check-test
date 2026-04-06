@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import type { AbAnswer, Question } from "@/types/question"
+import Image from "next/image"
 
 interface QuestionScreenProps {
   question: Question
@@ -74,7 +75,7 @@ export default function QuestionScreen({
       <div className="text-center pb-4 text-xs text-gray-400 font-medium">インナーブランディングチェック診断</div>
       <div className="text-center pb-8">
         <figure className="w-fit mx-auto">
-          <img src="/images/logo.svg" alt="shunbin" loading="lazy" />
+          <Image src="/images/logo.svg" alt="shunbin" width={160} height={48} className="h-auto w-auto max-w-[160px]" unoptimized />
         </figure>
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 interface StartScreenProps {
   onStart: () => void
@@ -29,7 +30,7 @@ export default function StartScreen({ onStart }: StartScreenProps) {
         </Button>
         <div className="text-center mt-8">
           <figure className="w-fit mx-auto">
-            <img src="/images/logo.svg" alt="shunbin" loading="lazy" />
+            <Image src="/images/logo.svg" alt="shunbin" width={160} height={48} className="h-auto w-auto max-w-[160px]" unoptimized />
           </figure>
         </div>
       </div>
