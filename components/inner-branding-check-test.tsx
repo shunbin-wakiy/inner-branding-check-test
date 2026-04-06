@@ -17,7 +17,7 @@ export default function InnerBrandingCheckTest() {
   const [currentScreen, setCurrentScreen] = useState<"start" | "question" | "result">("start")
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, AbAnswer>>({})
-  const [result, setResult] = useState<{ bCount: number; tier: ResultTier } | null>(null)
+  const [result, setResult] = useState<{ tier: ResultTier } | null>(null)
 
   const handleStartTest = () => {
     setCurrentScreen("question")
@@ -34,8 +34,7 @@ export default function InnerBrandingCheckTest() {
     if (currentQuestionIndex + 1 < questions.length) {
       setCurrentQuestionIndex((i) => i + 1)
     } else {
-      const bCount = countB(newAnswers)
-      setResult({ bCount, tier: tierFromBCount(bCount) })
+      setResult({ tier: tierFromBCount(countB(newAnswers)) })
       setCurrentScreen("result")
     }
   }
@@ -62,7 +61,7 @@ export default function InnerBrandingCheckTest() {
         )}
 
         {currentScreen === "result" && result && (
-          <ResultScreen bCount={result.bCount} tier={result.tier} onRestart={handleRestart} />
+          <ResultScreen tier={result.tier} onRestart={handleRestart} />
         )}
       </div>
     </div>

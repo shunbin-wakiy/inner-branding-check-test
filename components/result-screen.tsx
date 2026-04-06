@@ -6,12 +6,11 @@ import Image from "next/image"
 import { RefreshCw } from "lucide-react"
 
 interface ResultScreenProps {
-  bCount: number
   tier: ResultTier
   onRestart: () => void
 }
 
-export default function ResultScreen({ bCount, tier, onRestart }: ResultScreenProps) {
+export default function ResultScreen({ tier, onRestart }: ResultScreenProps) {
   return (
     <div className="w-full max-w-xl mx-auto">
       <div className="flex flex-col items-center justify-center p-8 min-h-[200px] text-center px-4">
