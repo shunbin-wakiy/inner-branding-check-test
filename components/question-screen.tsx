@@ -54,7 +54,7 @@ export default function QuestionScreen({
 
       <div className="brandingBg mb-8 mt-12">
         <div className="inner">
-          <div className="tane">
+          {/* <div className="tane">
             <figure>
               <img src="/images/tane.svg" alt="" loading="lazy" />
             </figure>
@@ -68,7 +68,7 @@ export default function QuestionScreen({
             <figure>
               <img src="/images/tree.svg" alt="" loading="lazy" width={178} />
             </figure>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="text-center pb-4 text-xs text-gray-400 font-medium">インナーブランディングチェック診断</div>

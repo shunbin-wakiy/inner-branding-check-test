@@ -18,10 +18,10 @@ export default function StartScreen({ onStart }: StartScreenProps) {
         </div>
 
         <p className="text-gray-600 mb-2 text-base sm:text-lg font-medium leading-relaxed">
-          あなたの会社は「一本の線」で繋がっていますか？
+          あなたの会社は「一本の線」で<br className="showSP" />繋がっていますか？
         </p>
-        <p className="text-gray-500 mb-8 max-w-lg text-sm sm:text-base leading-relaxed">
-          診断テストは、10項目になります。自社の現状をチェックしてみてください。
+        <p className="text-gray-500 mb-8 max-w-2xl text-sm sm:text-base leading-relaxed">
+          診断テストは、10項目になります。<br className="showSP" />自社の現状をチェックしてみてください。
         </p>
 
         <Button onClick={onStart} size="lg" className="px-8 py-6 text-lg text-center rounded-full startButton">

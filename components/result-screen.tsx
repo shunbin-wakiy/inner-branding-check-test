@@ -13,14 +13,15 @@ interface ResultScreenProps {
 export default function ResultScreen({ bCount, tier, onRestart }: ResultScreenProps) {
   return (
     <div className="w-full max-w-xl mx-auto">
-      <div className="flex flex-col items-center justify-center p-8 min-h-[350px] text-center px-4">
-        <p className="text-lg text-gray-600 mb-2">
+      <div className="flex flex-col items-center justify-center p-8 min-h-[200px] text-center px-4">
+        {/* <p className="text-lg text-gray-600 mb-2">
           B の回答は <span className="font-bold text-gray-800 text-2xl tabular-nums">{bCount}</span>{" "}
           個（全10問中）
-        </p>
-        <p className="text-sm text-gray-500 mb-8">{tier.bandLabel}</p>
+        </p> */}
+        {/* <p className="text-sm text-gray-500 mb-8">{tier.bandLabel}</p> */}
 
-        <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">{tier.message}</p>
+        <p className="text-2xl sm:text-3xl font-bold text-gray-800 leading-snug mb-4">{tier.headline}</p>
+        <p className="text-lg text-gray-700 font-medium leading-relaxed whitespace-pre-line">{tier.message}</p>
       </div>
 
       <div className="flex justify-center p-6">
