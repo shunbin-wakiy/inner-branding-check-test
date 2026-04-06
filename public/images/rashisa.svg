@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.95 241.81" width="163.95" height="241.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #920783;
+      }
+
+      .cls-2 {
+        fill: #231815;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #8fc31f;
+      }
+    </style>
+  </defs>
+  <g id="_キャラクターデザイン" data-name="キャラクターデザイン">
+    <g>
+      <g>
+        <rect class="cls-4" x="80.73" y="24.96" width="2.62" height="36.12"/>
+        <path class="cls-4" d="M82.04,24.96c0-13.79,11.18-24.96,24.96-24.96,0,13.79-11.18,24.96-24.96,24.96Z"/>
+        <path class="cls-4" d="M82.04,24.96c-13.79,0-24.96-11.18-24.96-24.96,13.79,0,24.96,11.18,24.96,24.96Z"/>
+      </g>
+      <ellipse class="cls-1" cx="81.98" cy="139.34" rx="81.98" ry="102.47"/>
+      <g>
+        <ellipse class="cls-3" cx="69.15" cy="84.32" rx="12.58" ry="15.72"/>
+        <ellipse class="cls-3" cx="94.8" cy="84.32" rx="12.58" ry="15.72"/>
+        <ellipse class="cls-2" cx="69.15" cy="84.32" rx="7.28" ry="9.09"/>
+        <ellipse class="cls-2" cx="94.8" cy="84.32" rx="7.28" ry="9.09"/>
+      </g>
+    </g>
+  </g>
+</svg>

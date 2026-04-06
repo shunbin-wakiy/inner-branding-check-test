@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 231.31 239.27" width="231.31" height="239.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #231815;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #8fc31f;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-1" cx="100.34" cy="86.31" r="14.77"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <circle class="cls-1" cx="130.96" cy="86.31" r="14.77"/>
+    </clipPath>
+  </defs>
+  <g id="_キャラクターデザイン" data-name="キャラクターデザイン">
+    <g>
+      <g>
+        <rect class="cls-5" x="114.34" y="24.96" width="2.62" height="36.12"/>
+        <path class="cls-5" d="M115.65,24.96c0-13.79,11.18-24.96,24.96-24.96,0,13.79-11.18,24.96-24.96,24.96Z"/>
+        <path class="cls-5" d="M115.65,24.96c-13.79,0-24.96-11.18-24.96-24.96,13.79,0,24.96,11.18,24.96,24.96Z"/>
+      </g>
+      <g>
+        <path class="cls-5" d="M178.29,41.61c-2.05-3.54-7.07-6.44-11.16-6.44h-102.96c-4.09,0-9.12,2.9-11.16,6.44L1.53,130.78c-2.05,3.54-2.05,9.34,0,12.89l51.48,89.16c2.05,3.54,7.07,6.44,11.16,6.44h102.96c4.09,0,9.12-2.9,11.16-6.44l51.48-89.16c2.05-3.54,2.05-9.34,0-12.89l-51.48-89.16Z"/>
+        <g>
+          <g>
+            <circle class="cls-4" cx="100.34" cy="86.31" r="14.77"/>
+            <g class="cls-6">
+              <circle class="cls-2" cx="96.33" cy="83.79" r="7.9"/>
+            </g>
+          </g>
+          <g>
+            <circle class="cls-4" cx="130.96" cy="86.31" r="14.77"/>
+            <g class="cls-3">
+              <circle class="cls-2" cx="126.95" cy="83.79" r="7.9"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

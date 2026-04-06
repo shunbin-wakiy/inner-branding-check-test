@@ -1,0 +1,147 @@
+br {
+  display: inline;
+}
+
+@media (min-width: 1201px) {
+  br.showPC {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  br.showTab {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) {
+  br.show768 {
+    display: none !important;
+  }
+}
+@media (min-width: 481px) {
+  br.showSP {
+    display: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  br.hdnPC {
+    display: none;
+  }
+  br.showPC {
+    display: inherit;
+  }
+}
+@media (max-width: 1024px) {
+  br.hdnTab {
+    display: none;
+  }
+  br.showTab {
+    display: inherit;
+  }
+}
+@media (max-width: 768px) {
+  br.hdn768 {
+    display: none;
+  }
+  br.show768 {
+    display: inherit;
+  }
+}
+@media (max-width: 480px) {
+  br.hdnSP {
+    display: none;
+  }
+  br.showSP {
+    display: inherit;
+  }
+}
+.questionArea {
+  position: relative;
+}
+.questionArea .questionText {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandingBg {
+  border-bottom: 10px solid #872d21;
+  position: relative;
+  overflow-x: clip;
+}
+.brandingBg .inner {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
+}
+.brandingBg .inner .tane {
+  position: absolute;
+  bottom: 0;
+  left: 19.27%;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .brandingBg .inner .tane {
+    left: 10px;
+  }
+}
+.brandingBg .inner .dog {
+  position: absolute;
+  bottom: 0;
+  left: 33.59%;
+  z-index: 1;
+}
+.brandingBg .inner .dog figure {
+  animation: obj_rl 1s steps(2) infinite;
+}
+.brandingBg .inner .tree {
+  position: absolute;
+  bottom: -8px;
+  right: 9.11%;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .brandingBg .inner .tree {
+    right: -40px;
+  }
+}
+
+@keyframes obj_rl {
+  to {
+    transform: rotate(-6deg);
+  }
+}
+button.startButton svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.startButton:hover {
+  cursor: pointer;
+}
+button.startButton:hover svg {
+  transform: translateX(4px);
+}
+
+button.restartButton {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.restartButton svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.restartButton span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.restartButton:hover {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #872d21;
+}
+button.restartButton:hover svg {
+  color: #872d21;
+}
+button.restartButton:hover span {
+  color: #872d21;
+}
