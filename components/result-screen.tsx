@@ -27,9 +27,9 @@ export default function ResultScreen({ tier, onRestart }: ResultScreenProps) {
 
       <div className="text-center pb-6 text-xs text-gray-400 font-medium">インナーブランディングチェック診断</div>
       <div className="text-center pb-8">
-        <figure className="w-fit mx-auto">
+        <figure className="w-fit mx-auto"><a href="https://www.shun-bin.com/" target="_blank" rel="noopener noreferrer">
           <Image src="/images/logo.svg" alt="shunbin" width={160} height={48} className="h-auto w-auto max-w-[160px]" unoptimized />
-        </figure>
+        </a></figure>
       </div>
     </div>
   )

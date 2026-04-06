@@ -29,9 +29,9 @@ export default function StartScreen({ onStart }: StartScreenProps) {
           診断を始める→
         </Button>
         <div className="text-center mt-8">
-          <figure className="w-fit mx-auto">
+          <figure className="w-fit mx-auto"><a href="https://www.shun-bin.com/" target="_blank" rel="noopener noreferrer">
             <Image src="/images/logo.svg" alt="shunbin" width={160} height={48} className="h-auto w-auto max-w-[160px]" unoptimized />
-          </figure>
+          </a></figure>
         </div>
       </div>
     </div>
