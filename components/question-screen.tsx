@@ -54,23 +54,7 @@ export default function QuestionScreen({
       </div>
 
       <div className="brandingBg mb-8 mt-12">
-        <div className="inner">
-          {/* <div className="tane">
-            <figure>
-              <img src="/images/tane.svg" alt="" loading="lazy" />
-            </figure>
-          </div>
-          <div className="dog">
-            <figure>
-              <img src="/images/dog.svg" alt="" loading="lazy" />
-            </figure>
-          </div>
-          <div className="tree">
-            <figure>
-              <img src="/images/tree.svg" alt="" loading="lazy" width={178} />
-            </figure>
-          </div> */}
-        </div>
+        <div className="inner" />
       </div>
       <div className="text-center pb-4 text-xs text-gray-400 font-medium">インナーブランディングチェック診断</div>
       <div className="text-center pb-8">
