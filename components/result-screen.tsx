@@ -14,7 +14,15 @@ export default function ResultScreen({ tier, onRestart }: ResultScreenProps) {
   return (
     <div className="w-full max-w-xl mx-auto">
       <div className="flex flex-col items-center justify-center p-8 min-h-[200px] text-center px-4">
-        <p className="text-2xl sm:text-3xl font-bold text-gray-800 leading-snug mb-4">{tier.headline}</p>
+        <p className="text-2xl sm:text-3xl font-bold text-gray-800 leading-snug mb-4">
+          {tier.headline}
+          {tier.headlineLine2 != null && (
+            <>
+              <br className="showSP" />
+              {tier.headlineLine2}
+            </>
+          )}
+        </p>
         <p className="text-lg text-gray-700 font-medium leading-relaxed whitespace-pre-line">{tier.message}</p>
       </div>
 

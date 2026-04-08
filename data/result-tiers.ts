@@ -11,7 +11,8 @@ const tiers: Record<ResultTierId, ResultTier> = {
   mid: {
     id: "mid",
     bandLabel: "Bが5〜7個",
-    headline: "ブラッシュアップが\n必要な状態です。",
+    headline: "ブラッシュアップが",
+    headlineLine2: "必要な状態です。",
     message: "設計か、あるいは運営のどこかに\n「ズレ」が生じているかもしれません。",
   },
   low: {
