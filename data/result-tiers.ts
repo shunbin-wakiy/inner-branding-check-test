@@ -24,8 +24,11 @@ const tiers: Record<ResultTierId, ResultTier> = {
   },
 }
 
-export function tierFromBCount(bCount: number): ResultTier {
-  if (bCount >= 8) return tiers.high
-  if (bCount >= 5) return tiers.mid
+/**
+ * @param tierBPickCount `countTierBPicks` の戻り値（各問で countsAsB に一致した選択の数）
+ */
+export function tierFromBCount(tierBPickCount: number): ResultTier {
+  if (tierBPickCount >= 8) return tiers.high
+  if (tierBPickCount >= 5) return tiers.mid
   return tiers.low
 }

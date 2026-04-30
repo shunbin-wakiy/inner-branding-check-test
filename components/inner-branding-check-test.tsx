@@ -4,14 +4,10 @@ import { useState } from "react"
 import StartScreen from "@/components/start-screen"
 import QuestionScreen from "@/components/question-screen"
 import ResultScreen from "@/components/result-screen"
-import { questions, TOTAL_QUESTIONS } from "@/data/questions"
+import { countTierBPicks, questions, TOTAL_QUESTIONS } from "@/data/questions"
 import { tierFromBCount } from "@/data/result-tiers"
 import type { AbAnswer } from "@/types/question"
 import type { ResultTier } from "@/types/result-tier"
-
-function countB(answers: Record<string, AbAnswer>): number {
-  return questions.reduce((acc, q) => (answers[q.id] === "B" ? acc + 1 : acc), 0)
-}
 
 export default function InnerBrandingCheckTest() {
   const [currentScreen, setCurrentScreen] = useState<"start" | "question" | "result">("start")
@@ -34,7 +30,7 @@ export default function InnerBrandingCheckTest() {
     if (currentQuestionIndex + 1 < questions.length) {
       setCurrentQuestionIndex((i) => i + 1)
     } else {
-      setResult({ tier: tierFromBCount(countB(newAnswers)) })
+      setResult({ tier: tierFromBCount(countTierBPicks(newAnswers)) })
       setCurrentScreen("result")
     }
   }
